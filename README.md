@@ -2,6 +2,10 @@
 
 This repository contains research code for **P3SL**, a personalized privacy-preserving split-learning framework for heterogeneous, resource-constrained edge devices.
 
+<p align="center">
+  <img src="assets/main_figure.png" alt="P3SL Framework Architecture" width="800">
+</p>
+
 P3SL follows the paper design:
 
 1. Clients train **sequentially** with the server instead of sharing models with one another.
@@ -9,8 +13,6 @@ P3SL follows the paper design:
 3. Each client injects **personalized Laplacian activation noise** with level `sigma_i` before sending intermediate representations to the server.
 4. Every `R` epochs, clients upload local parameters for **server-side weighted aggregation of `W_1:smax`**. The aggregated `W_1:smax` is kept on the server for evaluation and missing-layer filling; it is **not redistributed to clients in P3SL mode**.
 5. Split-point and noise-level selection can be performed through the paper's table-based bi-level optimization: the server builds a privacy leakage table `PL(s, sigma)` and a noise assignment table `T_sigma[s]`, while clients choose split points using their local energy/power profile and privacy-sensitivity coefficient `alpha_i`.
-
-The code still includes optional compression/decomposition utilities and baseline modes for experiments, but the default P3SL path is sequential training with personalized split points, Laplacian activation noise, and server-only aggregation.
 
 ---
 
