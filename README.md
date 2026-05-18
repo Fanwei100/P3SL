@@ -3,7 +3,7 @@
 This repository contains research code for **P3SL**, a personalized privacy-preserving split-learning framework for heterogeneous, resource-constrained edge devices.
 
 <p align="center">
-  <img src="assets/main_figure.png" alt="P3SL Framework Architecture" width="800">
+  <img src="p3sl.jpg" alt="P3SL Framework Architecture" width="800">
 </p>
 
 P3SL follows the paper design:
