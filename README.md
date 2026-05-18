@@ -24,7 +24,6 @@ P3SL/
 │   ├── client_worker.py        Entry point for a data-owner client
 │   ├── websocketServer.py      WebSocket worker and local training routines
 │   ├── P3SLPrivacyOptimization.py  Client-side finite split enumeration
-│   ├── Fsimmean.csv            Privacy leakage table copy for local lookup
 │   ├── DataSet.py              Dataset loading and partitioning
 │   ├── Dirichlet_Partition.py  Non-IID Dirichlet partitioner
 │   ├── SplitPointProfiling.py  Energy/power profiling helpers
@@ -35,7 +34,6 @@ P3SL/
 │   ├── training_coordinator.py Entry point for P3SL orchestration
 │   ├── Training.py             Sequential training, aggregation, reassignment
 │   ├── P3SLPrivacyOptimization.py  PL/T_sigma and Eq. (3)/(5) helpers
-│   ├── Fsimmean.csv            Default privacy leakage table
 │   ├── Models.py               VGG and ResNet split-model wrappers
 │   ├── Util.py                 Common utilities and evaluation helpers
 │   ├── ParralelTraining.py     Baseline parallel training mode
