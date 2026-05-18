@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Dataset cache (downloaded by torchvision at runtime)
+data/
+DataOwner/data/
+DataScientest/data/
+
+# Trained models and experiment outputs
+Models/
+ServerResults/
+SplitProfiling/
+CSV/
+*.pt
+*.pth
+*.ckpt
+
+# Logs
+*.log
+Server.log
+Client.log
+OPow*.out
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
